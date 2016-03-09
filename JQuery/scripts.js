@@ -22,7 +22,12 @@ $(document).ready (function () {
         $('#nothing').prepend('<span>Chase Brasfield</span>')
     });
     
-
+    $('#list').click(function() {
+        $('ul').append('<li>' + friends[count] + '</li>')
+        count = count +1
+    })
+    var count = 0;
+    var friends = ['kent ','john ','andi ','phillip ','mom ','jane ','jerry '];
 });
 
 
